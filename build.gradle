@@ -1,0 +1,194 @@
+/*
+ * Copyright (c) 2022 CodeHead Systems. All rights reserved
+ */
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal() // was jcenter() which is dying
+    }
+}
+
+plugins {
+    id 'version-catalog'
+    id 'signing'
+    id 'maven-publish'
+}
+repositories {
+    mavenLocal()
+    mavenCentral()
+    gradlePluginPortal()  // was jcenter() which is dying
+    google()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+}
+
+group 'com.codeheadsystems'
+version '1.0.0-SNAPSHOT'
+//version '1.0.0'
+// publish and signing
+
+ext {
+    appName = 'dependencies'
+}
+
+configurations {
+    project.archivesBaseName = "${appName}"
+}
+
+catalog {
+    versionCatalog {
+        version('ai', '1.8.2')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx-ai
+        version('ashley', '1.7.4')  // https://mvnrepository.com/artifact/com.badlogicgames.ashley/ashley
+        version('assertj', '3.23.1')  // https://mvnrepository.com/artifact/org.assertj/assertj-core
+        version('awsLocalDDB', "1.15.0")  // https://mvnrepository.com/artifact/com.amazonaws/DynamoDBLocal
+        version('awsSDK', "1.12.331")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+        version('awsSDK2', "2.18.6")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
+        version('bouncy', '1.70')  // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
+        version('box2DLights', '1.5') // https://mvnrepository.com/artifact/com.badlogicgames.box2dlights/box2dlights
+        version('cassandraDriver', '4.14.1') //  https://mvnrepository.com/artifact/com.datastax.oss/java-driver-core
+        version('cassandraUnit', '4.3.1.0') // https://mvnrepository.com/artifact/org.cassandraunit/cassandra-unit
+        version('commonsIo', '2.11.0')  // https://mvnrepository.com/artifact/commons-io/commons-io
+        version('commonsLang', '3.12.0') // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+        version('dagger', '2.44')  // https://mvnrepository.com/artifact/com.google.dagger/dagger
+        version('dropwizard', '2.1.4') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
+        version('gdx', '1.11.0')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx
+        version('guava', '31.1-jre')  // https://mvnrepository.com/artifact/com.google.guava/guava
+        version('hsqldb', '2.7.1')  // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+        version('immutables', '2.9.2')  // https://mvnrepository.com/artifact/org.immutables/value
+        version('jacksonDatabind', '2.13.4.2') // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+        version('jackson', '2.13.4') // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+        version('jakartaServlet', '6.0.0') // https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api
+        version('javaxServlet', '4.0.1') // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+        version('jupiter', '5.9.1') // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+        version('log4j', '2.19.0') //  https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+        version('logback', '1.4.4')  // https://mvnrepository.com/artifact/ch.qos.logback/logback-core
+        version('metrics', '4.2.12') // https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core
+        version('micrometer', '1.9.5') // https://mvnrepository.com/artifact/io.micrometer/micrometer-core
+        version('mockito', '4.8.1')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
+        version('netty', '4.1.84.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
+        version('openfeign', '11.10')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
+        version('resilience4j', '1.7.1') // https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry
+        version('retrofit', '2.9.0') // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
+        version('slf4j', '2.0.3')  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+        version('testContainer', "1.17.5") // https://mvnrepository.com/artifact/org.testcontainers/testcontainers
+
+        library('logback-access', 'ch.qos.logback', 'logback-access').versionRef('logback')
+        library('logback-classic', 'ch.qos.logback', 'logback-classic').versionRef('logback')
+        library('logback-core', 'ch.qos.logback', 'logback-core').versionRef('logback')
+        library('aws-java-sdk-dynamodb', 'com.amazonaws', 'aws-java-sdk-dynamodb').versionRef('awsSDK')
+        library('ashley', 'com.badlogicgames.ashley', 'ashley').versionRef('ashley')
+        library('box2dlights', 'com.badlogicgames.box2dlights', 'box2dlights').versionRef('box2DLights')
+        library('gdx', 'com.badlogicgames.gdx', 'gdx').versionRef('gdx')
+        library('gdx-backend-android', 'com.badlogicgames.gdx', 'gdx-backend-android').versionRef('gdx')
+        library('gdx-backend-headless', 'com.badlogicgames.gdx', 'gdx-backend-headless').versionRef('gdx')
+        library('gdx-backend-lwjgl3', 'com.badlogicgames.gdx', 'gdx-backend-lwjgl3').versionRef('gdx')
+        library('gdx-box2d', 'com.badlogicgames.gdx', 'gdx-box2d').versionRef('gdx')
+        library('gdx-box2d-platform', 'com.badlogicgames.gdx', 'gdx-box2d-platform').versionRef('gdx')
+        library('gdx-bullet', 'com.badlogicgames.gdx', 'gdx-bullet').versionRef('gdx')
+        library('gdx-bullet-platform', 'com.badlogicgames.gdx', 'gdx-bullet-platform').versionRef('gdx')
+        library('gdx-freetype', 'com.badlogicgames.gdx', 'gdx-freetype').versionRef('gdx')
+        library('gdx-freetype-platform', 'com.badlogicgames.gdx', 'gdx-freetype-platform').versionRef('gdx')
+        library('gdx-platform', 'com.badlogicgames.gdx', 'gdx-platform').versionRef('gdx')
+        library('oss-core', 'com.datastax.oss', 'java-driver-core').versionRef('cassandraDriver')
+        library('oss-mapper-runtime', 'com.datastax.oss', 'java-driver-mapper-runtime').versionRef('cassandraDriver')
+        library('oss-query-builder', 'com.datastax.oss', 'java-driver-query-builder').versionRef('cassandraDriver')
+        library('jackson-annotations', 'com.fasterxml.jackson.core', 'jackson-annotations').versionRef('jackson')
+        library('jackson-core', 'com.fasterxml.jackson.core', 'jackson-core').versionRef('jackson')
+        library('jackson-databind', 'com.fasterxml.jackson.core', 'jackson-databind').versionRef('jacksonDatabind')
+        library('jackson-datatype-jdk8', 'com.fasterxml.jackson.datatype', 'jackson-datatype-jdk8').versionRef('jackson')
+        library('dagger', 'com.google.dagger', 'dagger').versionRef('dagger')
+        library('dagger-compiler', 'com.google.dagger', 'dagger-compiler').versionRef('dagger')
+        library('guava', 'com.google.guava', 'guava').versionRef('guava')
+        library('commons-io', 'commons-io', 'commons-io').versionRef('commonsIo')
+        library('retrofit2-converter-jackson', 'com.squareup.retrofit2', 'converter-jackson').versionRef('retrofit')
+        library('retrofit2-converter-java8', 'com.squareup.retrofit2', 'converter-java8').versionRef('retrofit')
+        library('retrofit', 'com.squareup.retrofit2', 'retrofit').versionRef('retrofit')
+        library('retrofit-mock', 'com.squareup.retrofit2', 'retrofit-mock').versionRef('retrofit')
+        library('dropwizard-auth', 'io.dropwizard', 'dropwizard-auth').versionRef('dropwizard')
+        library('dropwizard-core', 'io.dropwizard', 'dropwizard-core').versionRef('dropwizard')
+        library('dropwizard-jackson', 'io.dropwizard', 'dropwizard-jackson').versionRef('dropwizard')
+        library('dropwizard-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard')
+        library('dropwizard-testing', 'io.dropwizard', 'dropwizard-testing').versionRef('dropwizard')
+        library('metrics-core', 'io.dropwizard.metrics', 'metrics-core').versionRef('metrics')
+        library('openfeign-core', 'io.github.openfeign', 'feign-core').versionRef('openfeign')
+        library('openfeign-jackson', 'io.github.openfeign', 'feign-jackson').versionRef('openfeign')
+        library('openfeign-java11', 'io.github.openfeign', 'feign-java11').versionRef('openfeign')
+        library('openfeign-jaxrs2', 'io.github.openfeign', 'feign-jaxrs2').versionRef('openfeign')
+        library('feign-micrometer', 'io.github.openfeign', 'feign-micrometer').versionRef('openfeign')
+        library('feign-slf4j', 'io.github.openfeign', 'feign-slf4j').versionRef('openfeign')
+        library('resilience4j-micrometer', 'io.github.resilience4j', 'resilience4j-micrometer').versionRef('resilience4j')
+        library('resilience4j-retry', 'io.github.resilience4j', 'resilience4j-retry').versionRef('resilience4j')
+        library('micrometer-core', 'io.micrometer', 'micrometer-core').versionRef('micrometer')
+        library('micrometer-registry-graphite', 'io.micrometer', 'micrometer-registry-graphite').versionRef('micrometer')
+        library('netty-all', 'io.netty', 'netty-all').versionRef('netty')
+        library('jakarta.servlet-api', 'jakarta.servlet', 'jakarta.servlet-api').versionRef('jakartaServlet')
+        library('javax.servlet-api', 'javax.servlet', 'javax.servlet-api').versionRef('javaxServlet')
+        library('log4j-api', 'org.apache.logging.log4j', 'log4j-api').versionRef('log4j')
+        library('log4j-core', 'org.apache.logging.log4j', 'log4j-core').versionRef('log4j')
+        library('assertj-core', 'org.assertj', 'assertj-core').versionRef('assertj')
+        library('bcpkix-jdk15on', 'org.bouncycastle', 'bcpkix-jdk15on').versionRef('bouncy')
+        library('bcprov-jdk15on', 'org.bouncycastle', 'bcprov-jdk15on').versionRef('bouncy')
+        library('immutables-value', 'org.immutables', 'value').versionRef('immutables')
+        library('immutables-value-annotations', 'org.immutables', 'value-annotations').versionRef('immutables')
+        library('junit-jupiter-api', 'org.junit.jupiter', 'junit-jupiter-api').versionRef('jupiter')
+        library('junit-jupiter-engine', 'org.junit.jupiter', 'junit-jupiter-engine').versionRef('jupiter')
+        library('junit-jupiter-params', 'org.junit.jupiter', 'junit-jupiter-params').versionRef('jupiter')
+        library('mockito-core', 'org.mockito', 'mockito-core').versionRef('mockito')
+        library('mockito-junit-jupiter', 'org.mockito', 'mockito-junit-jupiter').versionRef('mockito')
+        library('slf4j-api', 'org.slf4j', 'slf4j-api').versionRef('slf4j')
+        library('slf4j-log4j12', 'org.slf4j', 'slf4j-log4j12').versionRef('slf4j')
+        library('testcontainers-cassandra', 'org.testcontainers', 'cassandra').versionRef('testContainer')
+        library('testcontainers-junit-jupiter', 'org.testcontainers', 'junit-jupiter').versionRef('testContainer')
+        library('testcontainers', 'org.testcontainers', 'testcontainers').versionRef('testContainer')
+        library('awsSDK2-dynamodb', 'software.amazon.awssdk', 'dynamodb').versionRef('awsSDK2')
+        
+    }
+}
+
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = appName
+            from components.versionCatalog
+            pom {
+                name = 'Dependencies'
+                description = 'Testing utilities'
+                url = 'https://github.com/wolpert/dependencies'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'wolpert'
+                        name = 'Ned Wolpert'
+                        email = 'ned.wolpert@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/wolpert/dependencies.git'
+                    developerConnection = 'scm:git:ssh://github.com/wolpert/dependencies.git'
+                    url = 'https://github.com/wolpert/dependencies/'
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            def releasesRepoUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+            def snapshotsRepoUrl = "https://oss.sonatype.org/content/repositories/snapshots"
+            url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+            name = "ossrh"
+            credentials(PasswordCredentials)
+        }
+    }
+}
+
+signing {
+    useGpgCmd()
+    sign publishing.publications.mavenJava
+}
