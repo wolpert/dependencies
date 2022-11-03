@@ -42,11 +42,11 @@ catalog {
         version('ashley', '1.7.4')  // https://mvnrepository.com/artifact/com.badlogicgames.ashley/ashley
         version('assertj', '3.23.1')  // https://mvnrepository.com/artifact/org.assertj/assertj-core
         version('awsLocalDDB', "1.15.0")  // https://mvnrepository.com/artifact/com.amazonaws/DynamoDBLocal
-        version('awsSDK', "1.12.331")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
-        version('awsSDK2', "2.18.6")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
+        version('awsSDK', "1.12.334")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+        version('awsSDK2', "2.18.8")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
         version('bouncy', '1.70')  // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
         version('box2DLights', '1.5') // https://mvnrepository.com/artifact/com.badlogicgames.box2dlights/box2dlights
-        version('cassandraDriver', '4.14.1') //  https://mvnrepository.com/artifact/com.datastax.oss/java-driver-core
+        version('cassandraDriver', '4.15.0') //  https://mvnrepository.com/artifact/com.datastax.oss/java-driver-core
         version('cassandraUnit', '4.3.1.0') // https://mvnrepository.com/artifact/org.cassandraunit/cassandra-unit
         version('commonsIo', '2.11.0')  // https://mvnrepository.com/artifact/commons-io/commons-io
         version('commonsLang', '3.12.0') // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
@@ -67,7 +67,7 @@ catalog {
         version('micrometer', '1.9.5') // https://mvnrepository.com/artifact/io.micrometer/micrometer-core
         version('mockito', '4.8.1')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
         version('netty', '4.1.84.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
-        version('openfeign', '11.10')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
+        version('openfeign', '12.0')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
         version('resilience4j', '1.7.1') // https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry
         version('retrofit', '2.9.0') // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
         version('slf4j', '2.0.3')  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
