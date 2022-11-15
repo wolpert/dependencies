@@ -96,6 +96,7 @@ catalog {
         library('jackson-annotations', 'com.fasterxml.jackson.core', 'jackson-annotations').versionRef('jackson')
         library('jackson-core', 'com.fasterxml.jackson.core', 'jackson-core').versionRef('jackson')
         library('jackson-databind', 'com.fasterxml.jackson.core', 'jackson-databind').versionRef('jacksonDatabind')
+        library('jackson-dataformat-yaml', 'com.fasterxml.jackson.dataformat', 'jackson-dataformat-yaml').versionRef('jackson')
         library('jackson-datatype-jdk8', 'com.fasterxml.jackson.datatype', 'jackson-datatype-jdk8').versionRef('jackson')
         library('dagger', 'com.google.dagger', 'dagger').versionRef('dagger')
         library('dagger-compiler', 'com.google.dagger', 'dagger-compiler').versionRef('dagger')
@@ -142,7 +143,6 @@ catalog {
         library('testcontainers-junit-jupiter', 'org.testcontainers', 'junit-jupiter').versionRef('testContainer')
         library('testcontainers', 'org.testcontainers', 'testcontainers').versionRef('testContainer')
         library('awsSDK2-dynamodb', 'software.amazon.awssdk', 'dynamodb').versionRef('awsSDK2')
-        
     }
 }
 
