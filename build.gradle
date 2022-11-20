@@ -76,6 +76,8 @@ catalog {
         library('logback-access', 'ch.qos.logback', 'logback-access').versionRef('logback')
         library('logback-classic', 'ch.qos.logback', 'logback-classic').versionRef('logback')
         library('logback-core', 'ch.qos.logback', 'logback-core').versionRef('logback')
+        library('aws.dynamodblocal', 'com.amazonaws','DynamoDBLocal').versionRef('awsLocalDDB')
+        library('software.amazon.awssdk.dynamodb','software.amazon.awssdk','dynamodb').versionRef('awsSDK2')
         library('aws-java-sdk-dynamodb', 'com.amazonaws', 'aws-java-sdk-dynamodb').versionRef('awsSDK')
         library('ashley', 'com.badlogicgames.ashley', 'ashley').versionRef('ashley')
         library('box2dlights', 'com.badlogicgames.box2dlights', 'box2dlights').versionRef('box2DLights')
