@@ -56,6 +56,7 @@ catalog {
         version('guava', '31.1-jre')  // https://mvnrepository.com/artifact/com.google.guava/guava
         version('hsqldb', '2.7.1')  // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
         version('immutables', '2.9.2')  // https://mvnrepository.com/artifact/org.immutables/value
+        version('javaxInject', '1')
         version('jacksonDatabind', '2.14.1') // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
         version('jackson', '2.14.1') // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
         version('jakartaServlet', '6.0.0') // https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api
@@ -95,6 +96,7 @@ catalog {
         library('oss-core', 'com.datastax.oss', 'java-driver-core').versionRef('cassandraDriver')
         library('oss-mapper-runtime', 'com.datastax.oss', 'java-driver-mapper-runtime').versionRef('cassandraDriver')
         library('oss-query-builder', 'com.datastax.oss', 'java-driver-query-builder').versionRef('cassandraDriver')
+        library('javax.inject', 'javax.inject', 'javax.inject').versionRef('javaxInject')
         library('jackson-annotations', 'com.fasterxml.jackson.core', 'jackson-annotations').versionRef('jackson')
         library('jackson-core', 'com.fasterxml.jackson.core', 'jackson-core').versionRef('jackson')
         library('jackson-databind', 'com.fasterxml.jackson.core', 'jackson-databind').versionRef('jacksonDatabind')
