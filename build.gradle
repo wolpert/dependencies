@@ -42,8 +42,8 @@ catalog {
         version('ashley', '1.7.4')  // https://mvnrepository.com/artifact/com.badlogicgames.ashley/ashley
         version('assertj', '3.23.1')  // https://mvnrepository.com/artifact/org.assertj/assertj-core
         version('awsLocalDDB', "1.15.0")  // https://mvnrepository.com/artifact/com.amazonaws/DynamoDBLocal
-        version('awsSDK', "1.12.349")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
-        version('awsSDK2', "2.18.24")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
+        version('awsSDK', "1.12.353")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+        version('awsSDK2', "2.18.28")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
         version('bouncy', '1.70')  // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
         version('box2DLights', '1.5') // https://mvnrepository.com/artifact/com.badlogicgames.box2dlights/box2dlights
         version('cassandraDriver', '4.15.0') //  https://mvnrepository.com/artifact/com.datastax.oss/java-driver-core
@@ -71,7 +71,7 @@ catalog {
         version('openfeign', '12.1')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
         version('resilience4j', '2.0.0') // https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry
         version('retrofit', '2.9.0') // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
-        version('slf4j', '2.0.4')  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+        version('slf4j', '2.0.5')  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
         version('testContainer', "1.17.6") // https://mvnrepository.com/artifact/org.testcontainers/testcontainers
 
         library('logback-access', 'ch.qos.logback', 'logback-access').versionRef('logback')
