@@ -93,6 +93,7 @@ catalog {
         library('gdx-freetype', 'com.badlogicgames.gdx', 'gdx-freetype').versionRef('gdx')
         library('gdx-freetype-platform', 'com.badlogicgames.gdx', 'gdx-freetype-platform').versionRef('gdx')
         library('gdx-platform', 'com.badlogicgames.gdx', 'gdx-platform').versionRef('gdx')
+        library('hsqldb', 'org.hsqldb','hsqldb').versionRef('hsqldb')
         library('oss-core', 'com.datastax.oss', 'java-driver-core').versionRef('cassandraDriver')
         library('oss-mapper-runtime', 'com.datastax.oss', 'java-driver-mapper-runtime').versionRef('cassandraDriver')
         library('oss-query-builder', 'com.datastax.oss', 'java-driver-query-builder').versionRef('cassandraDriver')
