@@ -46,6 +46,7 @@ catalog {
         version('awsSDK2', "2.19.3")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
         version('bouncy', '1.72')  // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on
         version('box2DLights', '1.5') // https://mvnrepository.com/artifact/com.badlogicgames.box2dlights/box2dlights
+        version('c3p0', '0.9.5.5') // https://mvnrepository.com/artifact/com.mchange/c3p0
         version('cassandraDriver', '4.15.0') //  https://mvnrepository.com/artifact/com.datastax.oss/java-driver-core
         version('cassandraUnit', '4.3.1.0') // https://mvnrepository.com/artifact/org.cassandraunit/cassandra-unit
         version('commonsIo', '2.11.0')  // https://mvnrepository.com/artifact/commons-io/commons-io
@@ -54,6 +55,7 @@ catalog {
         version('dropwizard', '2.1.4') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
         version('gdx', '1.11.0')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx
         version('guava', '31.1-jre')  // https://mvnrepository.com/artifact/com.google.guava/guava
+        version('hikaricp', '5.0.1') // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
         version('hsqldb', '2.7.1')  // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
         version('immutables', '2.9.3')  // https://mvnrepository.com/artifact/org.immutables/value
         version('javaxInject', '1')
@@ -83,6 +85,7 @@ catalog {
         library('aws-java-sdk-dynamodb', 'com.amazonaws', 'aws-java-sdk-dynamodb').versionRef('awsSDK')
         library('ashley', 'com.badlogicgames.ashley', 'ashley').versionRef('ashley')
         library('box2dlights', 'com.badlogicgames.box2dlights', 'box2dlights').versionRef('box2DLights')
+        library('c3p0', 'com.mchange', 'c3p0').versionRef('c3p0')
         library('gdx', 'com.badlogicgames.gdx', 'gdx').versionRef('gdx')
         library('gdx-backend-android', 'com.badlogicgames.gdx', 'gdx-backend-android').versionRef('gdx')
         library('gdx-backend-headless', 'com.badlogicgames.gdx', 'gdx-backend-headless').versionRef('gdx')
@@ -94,6 +97,7 @@ catalog {
         library('gdx-freetype', 'com.badlogicgames.gdx', 'gdx-freetype').versionRef('gdx')
         library('gdx-freetype-platform', 'com.badlogicgames.gdx', 'gdx-freetype-platform').versionRef('gdx')
         library('gdx-platform', 'com.badlogicgames.gdx', 'gdx-platform').versionRef('gdx')
+        library('hikaricp', 'com.zaxxer', 'HikariCP').versionRef('hikaricp')
         library('hsqldb', 'org.hsqldb','hsqldb').versionRef('hsqldb')
         library('oss-core', 'com.datastax.oss', 'java-driver-core').versionRef('cassandraDriver')
         library('oss-mapper-runtime', 'com.datastax.oss', 'java-driver-mapper-runtime').versionRef('cassandraDriver')
