@@ -53,6 +53,7 @@ catalog {
         version('commonsLang', '3.12.0') // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
         version('dagger', '2.44.2')  // https://mvnrepository.com/artifact/com.google.dagger/dagger
         version('dropwizard', '2.1.4') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
+        version('dropwizard-jdbi', '1.3.29') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-jdbi
         version('gdx', '1.11.0')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx
         version('guava', '31.1-jre')  // https://mvnrepository.com/artifact/com.google.guava/guava
         version('hikaricp', '5.0.1') // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
@@ -107,6 +108,7 @@ catalog {
         library('jdbi.guava', 'org.jdbi', 'jdbi3-guava').versionRef('jdbi')
         library('jdbi.jackson2', 'org.jdbi', 'jdbi3-jackson2').versionRef('jdbi')
         library('jdbi.postgres', 'org.jdbi', 'jdbi3-postgres').versionRef('jdbi')
+        library('jdbi.sqlobject', 'org.jdbi', 'jdbi3-sqlobject').versionRef('jdbi')
         library('jdbi.bom', 'org.jdbi', 'jdbi3-bom').versionRef('jdbi')
         library('oss-core', 'com.datastax.oss', 'java-driver-core').versionRef('cassandraDriver')
         library('oss-mapper-runtime', 'com.datastax.oss', 'java-driver-mapper-runtime').versionRef('cassandraDriver')
@@ -128,6 +130,7 @@ catalog {
         library('dropwizard-auth', 'io.dropwizard', 'dropwizard-auth').versionRef('dropwizard')
         library('dropwizard-core', 'io.dropwizard', 'dropwizard-core').versionRef('dropwizard')
         library('dropwizard-jackson', 'io.dropwizard', 'dropwizard-jackson').versionRef('dropwizard')
+        library('dropwizard-jdbi', 'io.dropwizard', 'dropwizard-jdbi').versionRef('dropwizard-jdbi')
         library('dropwizard-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard')
         library('dropwizard-testing', 'io.dropwizard', 'dropwizard-testing').versionRef('dropwizard')
         library('metrics-core', 'io.dropwizard.metrics', 'metrics-core').versionRef('metrics')
