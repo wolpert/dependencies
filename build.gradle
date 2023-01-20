@@ -73,6 +73,7 @@ catalog {
         version('mockito', '4.11.0')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
         version('netty', '4.1.87.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
         version('openfeign', '12.1')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
+        version('pgjdbc','42.5.1') // https://mvnrepository.com/artifact/org.postgresql/postgresql
         version('resilience4j', '2.0.2') // https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry
         version('retrofit', '2.9.0') // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
         version('slf4j', '2.0.6')  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
@@ -105,6 +106,7 @@ catalog {
         library('jdbi.testcontainers', 'org.jdbi', 'jdbi3-testcontainers').versionRef('jdbi')
         library('jdbi.guava', 'org.jdbi', 'jdbi3-guava').versionRef('jdbi')
         library('jdbi.jackson2', 'org.jdbi', 'jdbi3-jackson2').versionRef('jdbi')
+        library('jdbi.postgres', 'org.jdbi', 'jdbi3-postgres').versionRef('jdbi')
         library('jdbi.bom', 'org.jdbi', 'jdbi3-bom').versionRef('jdbi')
         library('oss-core', 'com.datastax.oss', 'java-driver-core').versionRef('cassandraDriver')
         library('oss-mapper-runtime', 'com.datastax.oss', 'java-driver-mapper-runtime').versionRef('cassandraDriver')
@@ -133,6 +135,7 @@ catalog {
         library('openfeign-jackson', 'io.github.openfeign', 'feign-jackson').versionRef('openfeign')
         library('openfeign-java11', 'io.github.openfeign', 'feign-java11').versionRef('openfeign')
         library('openfeign-jaxrs2', 'io.github.openfeign', 'feign-jaxrs2').versionRef('openfeign')
+        library('pgjdbc','org.postgresql','postgresql').versionRef('pgjdbc')
         library('feign-micrometer', 'io.github.openfeign', 'feign-micrometer').versionRef('openfeign')
         library('feign-slf4j', 'io.github.openfeign', 'feign-slf4j').versionRef('openfeign')
         library('resilience4j-micrometer', 'io.github.resilience4j', 'resilience4j-micrometer').versionRef('resilience4j')
