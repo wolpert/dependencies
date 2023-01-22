@@ -133,6 +133,7 @@ catalog {
         library('dropwizard-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard')
         library('dropwizard-testing', 'io.dropwizard', 'dropwizard-testing').versionRef('dropwizard')
         library('metrics-core', 'io.dropwizard.metrics', 'metrics-core').versionRef('metrics')
+        library('metrics-jdbi', 'io.dropwizard.metrics', 'metrics-jdbi3').versionRef('metrics')
         library('openfeign-core', 'io.github.openfeign', 'feign-core').versionRef('openfeign')
         library('openfeign-jackson', 'io.github.openfeign', 'feign-jackson').versionRef('openfeign')
         library('openfeign-java11', 'io.github.openfeign', 'feign-java11').versionRef('openfeign')
