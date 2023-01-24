@@ -53,6 +53,7 @@ catalog {
         version('commonsLang', '3.12.0') // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
         version('dagger', '2.44.2')  // https://mvnrepository.com/artifact/com.google.dagger/dagger
         version('dropwizard', '2.1.4') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
+        version('jetcd', '0.7.5') // https://mvnrepository.com/artifact/io.etcd/jetcd-core
         version('gdx', '1.11.0')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx
         version('guava', '31.1-jre')  // https://mvnrepository.com/artifact/com.google.guava/guava
         version('hikaricp', '5.0.1') // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
@@ -101,6 +102,8 @@ catalog {
         library('gdx-platform', 'com.badlogicgames.gdx', 'gdx-platform').versionRef('gdx')
         library('hikaricp', 'com.zaxxer', 'HikariCP').versionRef('hikaricp')
         library('hsqldb', 'org.hsqldb','hsqldb').versionRef('hsqldb')
+        library('jetcd.core', 'io.etcd', 'jetcd-core').versionRef('jetcd')
+        library('jetcd.test', 'io.etcd', 'jetcd-test').versionRef('jetcd')
         library('jdbi.core', 'org.jdbi', 'jdbi3-core').versionRef('jdbi')
         library('jdbi.testing', 'org.jdbi', 'jdbi3-testing').versionRef('jdbi')
         library('jdbi.testcontainers', 'org.jdbi', 'jdbi3-testcontainers').versionRef('jdbi')
