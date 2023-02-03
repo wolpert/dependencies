@@ -164,6 +164,7 @@ catalog {
         library('junit-jupiter-params', 'org.junit.jupiter', 'junit-jupiter-params').versionRef('jupiter')
         library('junit-platform-suite-api', 'org.junit.platform', 'junit-platform-suite-api').versionRef('junit-platform')
         library('junit-platform-suite-engine', 'org.junit.platform', 'junit-platform-suite-engine').versionRef('junit-platform')
+        library('junit-platform-launcher', 'org.junit.platform', 'junit-platform-launcher').versionRef('junit-platform')
         library('liquibase.core', 'org.liquibase', 'liquibase-core').versionRef('liquibase')
         library('mockito-core', 'org.mockito', 'mockito-core').versionRef('mockito')
         library('mockito-junit-jupiter', 'org.mockito', 'mockito-junit-jupiter').versionRef('mockito')
