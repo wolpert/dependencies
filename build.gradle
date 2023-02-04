@@ -171,6 +171,7 @@ catalog {
         library('slf4j-api', 'org.slf4j', 'slf4j-api').versionRef('slf4j')
         library('slf4j-log4j12', 'org.slf4j', 'slf4j-log4j12').versionRef('slf4j')
         library('testcontainers-cassandra', 'org.testcontainers', 'cassandra').versionRef('testContainer')
+        library('testcontainers-postgresql', 'org.testcontainers', 'postgresql').versionRef('testContainer')
         library('testcontainers-junit-jupiter', 'org.testcontainers', 'junit-jupiter').versionRef('testContainer')
         library('testcontainers', 'org.testcontainers', 'testcontainers').versionRef('testContainer')
         library('awsSDK2-dynamodb', 'software.amazon.awssdk', 'dynamodb').versionRef('awsSDK2')
