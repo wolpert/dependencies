@@ -42,8 +42,8 @@ catalog {
         version('ashley', '1.7.4')  // https://mvnrepository.com/artifact/com.badlogicgames.ashley/ashley
         version('assertj', '3.24.2')  // https://mvnrepository.com/artifact/org.assertj/assertj-core
         version('awsLocalDDB', "1.15.0")  // https://mvnrepository.com/artifact/com.amazonaws/DynamoDBLocal
-        version('awsSDK', "1.12.410")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
-        version('awsSDK2', "2.20.7")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
+        version('awsSDK', "1.12.414")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+        version('awsSDK2', "2.20.11")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
         version('bouncy', '1.72')  // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on
         version('box2DLights', '1.5') // https://mvnrepository.com/artifact/com.badlogicgames.box2dlights/box2dlights
         version('c3p0', '0.9.5.5') // https://mvnrepository.com/artifact/com.mchange/c3p0
@@ -52,7 +52,8 @@ catalog {
         version('commonsIo', '2.11.0')  // https://mvnrepository.com/artifact/commons-io/commons-io
         version('commonsLang', '3.12.0') // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
         version('dagger', '2.45')  // https://mvnrepository.com/artifact/com.google.dagger/dagger
-        version('dropwizard', '2.1.4') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
+        version('dropwizard', '2.1.5') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
+        version('dropwizard4', '4.0.0-beta.4') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
         version('jetcd', '0.7.5') // https://mvnrepository.com/artifact/io.etcd/jetcd-core
         version('gdx', '1.11.0')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx
         version('guava', '31.1-jre')  // https://mvnrepository.com/artifact/com.google.guava/guava
@@ -68,9 +69,9 @@ catalog {
         version('jupiter', '5.9.2') // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
         version('junit-platform', '1.9.2') // https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api
         version('liquibase', '4.19.0') // https://mvnrepository.com/artifact/org.liquibase/liquibase-core
-        version('log4j', '2.19.0') //  https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+        version('log4j', '2.20.0') //  https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
         version('logback', '1.4.5')  // https://mvnrepository.com/artifact/ch.qos.logback/logback-core
-        version('metrics', '4.2.16') // https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core
+        version('metrics', '4.2.17') // https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core
         version('micrometer', '1.10.4') // https://mvnrepository.com/artifact/io.micrometer/micrometer-core
         version('mockito', '5.1.1')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
         version('netty', '4.1.89.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
@@ -130,18 +131,28 @@ catalog {
         library('retrofit2-converter-java8', 'com.squareup.retrofit2', 'converter-java8').versionRef('retrofit')
         library('retrofit', 'com.squareup.retrofit2', 'retrofit').versionRef('retrofit')
         library('retrofit-mock', 'com.squareup.retrofit2', 'retrofit-mock').versionRef('retrofit')
+
         library('dropwizard-auth', 'io.dropwizard', 'dropwizard-auth').versionRef('dropwizard')
         library('dropwizard-core', 'io.dropwizard', 'dropwizard-core').versionRef('dropwizard')
         library('dropwizard-jackson', 'io.dropwizard', 'dropwizard-jackson').versionRef('dropwizard')
         library('dropwizard-jdbi', 'io.dropwizard', 'dropwizard-jdbi3').versionRef('dropwizard')
         library('dropwizard-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard')
         library('dropwizard-testing', 'io.dropwizard', 'dropwizard-testing').versionRef('dropwizard')
+
+        library('dropwizard4-auth', 'io.dropwizard', 'dropwizard-auth').versionRef('dropwizard4')
+        library('dropwizard4-core', 'io.dropwizard', 'dropwizard-core').versionRef('dropwizard4')
+        library('dropwizard4-jackson', 'io.dropwizard', 'dropwizard-jackson').versionRef('dropwizard4')
+        library('dropwizard4-jdbi', 'io.dropwizard', 'dropwizard-jdbi3').versionRef('dropwizard4')
+        library('dropwizard4-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard4')
+        library('dropwizard4-testing', 'io.dropwizard', 'dropwizard-testing').versionRef('dropwizard4')
+
         library('metrics-core', 'io.dropwizard.metrics', 'metrics-core').versionRef('metrics')
         library('metrics-jdbi', 'io.dropwizard.metrics', 'metrics-jdbi3').versionRef('metrics')
         library('openfeign-core', 'io.github.openfeign', 'feign-core').versionRef('openfeign')
         library('openfeign-jackson', 'io.github.openfeign', 'feign-jackson').versionRef('openfeign')
         library('openfeign-java11', 'io.github.openfeign', 'feign-java11').versionRef('openfeign')
         library('openfeign-jaxrs2', 'io.github.openfeign', 'feign-jaxrs2').versionRef('openfeign')
+        library('openfeign-jakarta', 'io.github.openfeign', 'feign-jakarta').versionRef('openfeign')
         library('pgjdbc','org.postgresql','postgresql').versionRef('pgjdbc')
         library('feign-micrometer', 'io.github.openfeign', 'feign-micrometer').versionRef('openfeign')
         library('feign-slf4j', 'io.github.openfeign', 'feign-slf4j').versionRef('openfeign')
