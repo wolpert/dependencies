@@ -51,6 +51,7 @@ catalog {
         version('cassandraUnit', '4.3.1.0') // https://mvnrepository.com/artifact/org.cassandraunit/cassandra-unit
         version('commonsIo', '2.11.0')  // https://mvnrepository.com/artifact/commons-io/commons-io
         version('commonsLang', '3.12.0') // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+        version('conscrypt', '2.5.2') // https://mvnrepository.com/artifact/org.conscrypt/conscrypt-openjdk-uber
         version('dagger', '2.45')  // https://mvnrepository.com/artifact/com.google.dagger/dagger
         version('dropwizard', '2.1.5') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
         version('dropwizard4', '4.0.0-beta.4') // https://mvnrepository.com/artifact/io.dropwizard/dropwizard-core
@@ -91,6 +92,7 @@ catalog {
         library('ashley', 'com.badlogicgames.ashley', 'ashley').versionRef('ashley')
         library('box2dlights', 'com.badlogicgames.box2dlights', 'box2dlights').versionRef('box2DLights')
         library('c3p0', 'com.mchange', 'c3p0').versionRef('c3p0')
+        library('conscrypt.openjdk.uber', 'org.conscrypt','conscrypt-openjdk-uber').versionRef('conscrypt')
         library('gdx', 'com.badlogicgames.gdx', 'gdx').versionRef('gdx')
         library('gdx-backend-android', 'com.badlogicgames.gdx', 'gdx-backend-android').versionRef('gdx')
         library('gdx-backend-headless', 'com.badlogicgames.gdx', 'gdx-backend-headless').versionRef('gdx')
