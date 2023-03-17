@@ -41,9 +41,9 @@ catalog {
         version('ai', '1.8.2')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx-ai
         version('ashley', '1.7.4')  // https://mvnrepository.com/artifact/com.badlogicgames.ashley/ashley
         version('assertj', '3.24.2')  // https://mvnrepository.com/artifact/org.assertj/assertj-core
-        version('awsLocalDDB', "1.15.0")  // https://mvnrepository.com/artifact/com.amazonaws/DynamoDBLocal
-        version('awsSDK', "1.12.414")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
-        version('awsSDK2', "2.20.11")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
+        version('awsLocalDDB', "1.21.1.0")  // https://mvnrepository.com/artifact/com.amazonaws/DynamoDBLocal
+        version('awsSDK', "1.12.428")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+        version('awsSDK2', "2.20.25")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
         version('bouncy', '1.72')  // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on
         version('box2DLights', '1.5') // https://mvnrepository.com/artifact/com.badlogicgames.box2dlights/box2dlights
         version('c3p0', '0.9.5.5') // https://mvnrepository.com/artifact/com.mchange/c3p0
@@ -69,14 +69,14 @@ catalog {
         version('javaxServlet', '4.0.1') // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
         version('jupiter', '5.9.2') // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
         version('junit-platform', '1.9.2') // https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api
-        version('liquibase', '4.19.0') // https://mvnrepository.com/artifact/org.liquibase/liquibase-core
+        version('liquibase', '4.20.0') // https://mvnrepository.com/artifact/org.liquibase/liquibase-core
         version('log4j', '2.20.0') //  https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
         version('logback', '1.4.5')  // https://mvnrepository.com/artifact/ch.qos.logback/logback-core
         version('metrics', '4.2.17') // https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core
-        version('micrometer', '1.10.4') // https://mvnrepository.com/artifact/io.micrometer/micrometer-core
-        version('mockito', '5.1.1')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
-        version('netty', '4.1.89.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
-        version('openfeign', '12.1')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
+        version('micrometer', '1.10.5') // https://mvnrepository.com/artifact/io.micrometer/micrometer-core
+        version('mockito', '5.2.0')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
+        version('netty', '4.1.90.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
+        version('openfeign', '12.2')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
         version('pgjdbc','42.5.4') // https://mvnrepository.com/artifact/org.postgresql/postgresql
         version('resilience4j', '2.0.2') // https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry
         version('retrofit', '2.9.0') // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
@@ -143,6 +143,7 @@ catalog {
 
         library('dropwizard4-auth', 'io.dropwizard', 'dropwizard-auth').versionRef('dropwizard4')
         library('dropwizard4-core', 'io.dropwizard', 'dropwizard-core').versionRef('dropwizard4')
+        library('dropwizard4-dependencies', 'io.dropwizard', 'dropwizard-dependencies').versionRef('dropwizard4')
         library('dropwizard4-jackson', 'io.dropwizard', 'dropwizard-jackson').versionRef('dropwizard4')
         library('dropwizard4-jdbi', 'io.dropwizard', 'dropwizard-jdbi3').versionRef('dropwizard4')
         library('dropwizard4-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard4')
