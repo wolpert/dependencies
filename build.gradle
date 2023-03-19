@@ -109,6 +109,8 @@ catalog {
         library('jetcd.core', 'io.etcd', 'jetcd-core').versionRef('jetcd')
         library('jetcd.test', 'io.etcd', 'jetcd-test').versionRef('jetcd')
         library('jdbi.core', 'org.jdbi', 'jdbi3-core').versionRef('jdbi')
+        library('jdbi.caffine', 'org.jdbi', 'jdbi3-caffine-cache').versionRef('jdbi')
+        library('jdbi.noopcache', 'org.jdbi', 'jdbi3-noop-cache').versionRef('jdbi')
         library('jdbi.testing', 'org.jdbi', 'jdbi3-testing').versionRef('jdbi')
         library('jdbi.testcontainers', 'org.jdbi', 'jdbi3-testcontainers').versionRef('jdbi')
         library('jdbi.guava', 'org.jdbi', 'jdbi3-guava').versionRef('jdbi')
