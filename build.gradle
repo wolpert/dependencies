@@ -179,6 +179,7 @@ catalog {
         library('bcprov', 'org.bouncycastle', 'bcprov-jdk18on').versionRef('bouncy')
         library('immutables-value', 'org.immutables', 'value').versionRef('immutables')
         library('immutables-value-annotations', 'org.immutables', 'value-annotations').versionRef('immutables')
+        library('junit-jupiter', 'org.junit.jupiter', 'junit-jupiter').versionRef('jupiter')
         library('junit-jupiter-api', 'org.junit.jupiter', 'junit-jupiter-api').versionRef('jupiter')
         library('junit-jupiter-engine', 'org.junit.jupiter', 'junit-jupiter-engine').versionRef('jupiter')
         library('junit-jupiter-params', 'org.junit.jupiter', 'junit-jupiter-params').versionRef('jupiter')
