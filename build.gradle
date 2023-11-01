@@ -32,8 +32,8 @@ ext {
     appName = 'dependencies'
 }
 
-configurations {
-    project.archivesBaseName = "${appName}"
+base {
+    archivesName = "${appName}"
 }
 
 catalog {
