@@ -142,6 +142,7 @@ catalog {
         library('dropwizard-jdbi', 'io.dropwizard', 'dropwizard-jdbi3').versionRef('dropwizard')
         library('dropwizard-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard')
         library('dropwizard-testing', 'io.dropwizard', 'dropwizard-testing').versionRef('dropwizard')
+        library('dropwizard-http2', 'io.dropwizard', 'dropwizard-http2').versionRef('dropwizard')
 
         library('dropwizard4-auth', 'io.dropwizard', 'dropwizard-auth').versionRef('dropwizard4')
         library('dropwizard4-core', 'io.dropwizard', 'dropwizard-core').versionRef('dropwizard4')
@@ -150,6 +151,7 @@ catalog {
         library('dropwizard4-jdbi', 'io.dropwizard', 'dropwizard-jdbi3').versionRef('dropwizard4')
         library('dropwizard4-metrics-graphite', 'io.dropwizard', 'dropwizard-metrics-graphite').versionRef('dropwizard4')
         library('dropwizard4-testing', 'io.dropwizard', 'dropwizard-testing').versionRef('dropwizard4')
+        library('dropwizard4-http2', 'io.dropwizard', 'dropwizard-http2').versionRef('dropwizard')
 
         library('metrics-core', 'io.dropwizard.metrics', 'metrics-core').versionRef('metrics')
         library('metrics-jdbi', 'io.dropwizard.metrics', 'metrics-jdbi3').versionRef('metrics')
