@@ -76,6 +76,7 @@ catalog {
         version('micrometer', '1.11.5') // https://mvnrepository.com/artifact/io.micrometer/micrometer-core
         version('mockito', '5.7.0')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
         version('netty', '4.1.101.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
+        version('okhttp', '4.12.0') // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp-bom
         version('openfeign', '13.0')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
         version('pgjdbc','42.6.0') // https://mvnrepository.com/artifact/org.postgresql/postgresql
         version('resilience4j', '2.1.0') // https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry
@@ -147,7 +148,6 @@ catalog {
         library('dropwizard-http2', 'io.dropwizard', 'dropwizard-http2').versionRef('dropwizard')
 
         library('dropwizard4-bom', 'io.dropwizard', 'dropwizard-bom').versionRef('dropwizard4')
-        library('dropwizard4-dependencies', 'io.dropwizard', 'dropwizard-dependencies').versionRef('dropwizard4')
         library('dropwizard4-auth', 'io.dropwizard', 'dropwizard-auth').versionRef('dropwizard4')
         library('dropwizard4-core', 'io.dropwizard', 'dropwizard-core').versionRef('dropwizard4')
         library('dropwizard4-dependencies', 'io.dropwizard', 'dropwizard-dependencies').versionRef('dropwizard4')
@@ -161,12 +161,13 @@ catalog {
         library('metrics-jdbi', 'io.dropwizard.metrics', 'metrics-jdbi3').versionRef('metrics')
         library('metrics-caffeine', 'io.dropwizard.metrics', 'metrics-caffeine').versionRef('metrics')
         library('metrics-jersey2', 'io.dropwizard.metrics', 'metrics-jersey2').versionRef('metrics')
-        library('metrics-jdbi', 'io.dropwizard.metrics', 'metrics-jdbi3').versionRef('metrics')
         library('openfeign-core', 'io.github.openfeign', 'feign-core').versionRef('openfeign')
+        library('okhttp-bom', 'com.squareup.okhttp3', 'okhttp-bom').versionRef('okhttp')
         library('openfeign-jackson', 'io.github.openfeign', 'feign-jackson').versionRef('openfeign')
         library('openfeign-java11', 'io.github.openfeign', 'feign-java11').versionRef('openfeign')
         library('openfeign-jaxrs2', 'io.github.openfeign', 'feign-jaxrs2').versionRef('openfeign')
         library('openfeign-jakarta', 'io.github.openfeign', 'feign-jakarta').versionRef('openfeign')
+        library('openfeign-okhttp', 'io.github.openfeign', 'feign-okhttp').versionRef('openfeign')
         library('pgjdbc','org.postgresql','postgresql').versionRef('pgjdbc')
         library('feign-micrometer', 'io.github.openfeign', 'feign-micrometer').versionRef('openfeign')
         library('feign-slf4j', 'io.github.openfeign', 'feign-slf4j').versionRef('openfeign')
