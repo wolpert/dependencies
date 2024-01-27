@@ -40,10 +40,10 @@ catalog {
     versionCatalog {
         version('ai', '1.8.2')  // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx-ai
         version('ashley', '1.7.4')  // https://mvnrepository.com/artifact/com.badlogicgames.ashley/ashley
-        version('assertj', '3.25.1')  // https://mvnrepository.com/artifact/org.assertj/assertj-core
+        version('assertj', '3.25.2')  // https://mvnrepository.com/artifact/org.assertj/assertj-core
         version('awsLocalDDB', "2.0.0")  // https://mvnrepository.com/artifact/com.amazonaws/DynamoDBLocal
-        version('awsSDK', "1.12.636")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
-        version('awsSDK2', "2.23.2")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
+        version('awsSDK', "1.12.645")  // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+        version('awsSDK2', "2.23.11")  // https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb
         version('bouncy', '1.77')  // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on
         version('box2DLights', '1.5') // https://mvnrepository.com/artifact/com.badlogicgames.box2dlights/box2dlights
         version('c3p0', '0.9.5.5') // https://mvnrepository.com/artifact/com.mchange/c3p0
@@ -72,17 +72,17 @@ catalog {
         version('liquibase', '4.25.1') // https://mvnrepository.com/artifact/org.liquibase/liquibase-core
         version('log4j', '2.22.1') //  https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
         version('logback', '1.4.14')  // https://mvnrepository.com/artifact/ch.qos.logback/logback-core
-        version('metrics', '4.2.23') // https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core
+        version('metrics', '4.2.25') // https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core
         version('micrometer', '1.12.2') // https://mvnrepository.com/artifact/io.micrometer/micrometer-core
-        version('mockito', '5.8.0')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
-        version('netty', '4.1.104.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
+        version('mockito', '5.10.0')  // https://mvnrepository.com/artifact/org.mockito/mockito-core
+        version('netty', '4.1.106.Final')  //  https://mvnrepository.com/artifact/io.netty/netty-all
         version('okhttp', '4.12.0') // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp-bom
-        version('openfeign', '13.1')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
+        version('openfeign', '13.2')  // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
         version('pgjdbc','42.7.1') // https://mvnrepository.com/artifact/org.postgresql/postgresql
         version('resilience4j', '2.2.0') // https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry
         version('retrofit', '2.9.0') // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
         version('slf4j', '2.0.11')  // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
-        version('testContainer', "1.19.3") // https://mvnrepository.com/artifact/org.testcontainers/testcontainers
+        version('testContainer', "1.19.4") // https://mvnrepository.com/artifact/org.testcontainers/testcontainers
 
         library('logback-access', 'ch.qos.logback', 'logback-access').versionRef('logback')
         library('logback-classic', 'ch.qos.logback', 'logback-classic').versionRef('logback')
@@ -166,6 +166,7 @@ catalog {
         library('openfeign-jackson', 'io.github.openfeign', 'feign-jackson').versionRef('openfeign')
         library('openfeign-java11', 'io.github.openfeign', 'feign-java11').versionRef('openfeign')
         library('openfeign-jaxrs2', 'io.github.openfeign', 'feign-jaxrs2').versionRef('openfeign')
+        library('openfeign-jaxrs3', 'io.github.openfeign', 'feign-jaxrs3').versionRef('openfeign')
         library('openfeign-jakarta', 'io.github.openfeign', 'feign-jakarta').versionRef('openfeign')
         library('openfeign-okhttp', 'io.github.openfeign', 'feign-okhttp').versionRef('openfeign')
         library('pgjdbc','org.postgresql','postgresql').versionRef('pgjdbc')
